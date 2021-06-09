@@ -1,0 +1,129 @@
+/*
+* ----------------------------------------------------------------------------------------
+ Author       : Design_Dude
+ Template Name: Abraham Portfolio Template
+ Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+/* Medium Layout */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+
+
+/* Tablet Layout (  768 to 991 )*/
+
+@media only screen and (max-width: 991px) {}
+
+
+
+
+/* Mobile Layout (481 to 767) */
+
+@media only screen and (max-width: 767px) {
+
+.contact-form .form-group textarea {
+    min-height: 130px;
+}
+.contact-form button {
+    font-size: 18px;
+    padding: 6px 12px;
+}
+.social-sites i {
+    padding: 0px 20px 10px 0px;
+}
+
+}
+
+
+
+
+
+
+/* Small Mobile Layout */
+
+@media only screen and (max-width: 480px) {
+#work,
+#about,
+#service,
+#contact,
+#testimonial {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#home {
+  background-position: left;
+}
+.home-title h1 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+.typed-cursor, .element {
+  display: inline;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+.my-navbar .navbar-brand {
+    line-height: 24px;
+}
+.section-title h2{
+  font-size: 26px;
+}
+.about-text {
+    margin: 50px auto 0;
+    max-width: 1000px;
+    text-align: center;
+}
+.about-text p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+.social-sites i {
+    padding: 0px 20px 10px 0px;
+}
+.about-buttons{
+    margin-top: 50px;
+}
+.buy-btn{
+    background: #ed1c3a none repeat scroll 0 0;
+    color: #fff;
+    line-height: 20px;
+}
+.single-service {
+  margin-bottom: 30px;
+}
+
+.single-service h3{
+  margin-bottom: 20px;
+}
+.single-portfolio:hover figure figcaption h5 {
+    margin-bottom: 60px;
+    opacity: 5;
+}
+.single-portfolio:hover figure figcaption h4 {
+    margin-bottom: 90px;
+    opacity: 5;
+}
+.single-component {
+    margin: 0 auto 30px;
+}
+.contact-form .form-group textarea {
+    min-height: 130px;
+}
+.contact-form button {
+    font-size: 18px;
+    padding: 6px 12px;
+}
+
+
+
+}

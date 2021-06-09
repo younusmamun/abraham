@@ -1,0 +1,589 @@
+/*
+* ----------------------------------------------------------------------------------------
+ Author       : Design_Dude
+ Template Name: Abraham Portfolio Template
+ Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CSS STYLE
+* 03.NAVIGATION CSS STYLE
+* 04.HOME CSS STYLE
+* 05.ABOUT CSS STYLE
+  06.RESUME CSS STYLE
+* 07.SERVICE CSS STYLE
+* 08.WORK CSS STYLE
+  09.CLIENTS CSS STYLE
+* 10.CONTACT CSS STYLE
+* 11.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+html,
+body {
+    height: 100%
+}
+body{
+  font-size:16px;
+  line-height: 24px;
+  color:#000000;
+  font-family: 'Work Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    font-family: 'Work Sans', sans-serif;
+}
+p {
+    margin-bottom: 0px;
+    letter-spacing: 0.5px;
+}
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+.section-title {
+  margin: 0;
+  text-align: center;
+}
+.section-title > h2{
+  margin: 0;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: .1px;
+}
+
+.section-title > h2, .section-title > h2 {
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+}
+.section-title > h2::before, .section-title > h2::before{
+    background: #ed1c3a none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+#work,
+#about,
+#service,
+#contact,
+#testimonial {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#service {
+  text-align: center;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.preloader {
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+.status-info {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 4px solid #222;
+    border-right: 4px solid #222;
+    border-bottom: 4px solid #222;
+    border-left: 4px solid #fff;
+    border-radius: 50%;
+    -webkit-animation: spinner 1000ms infinite linear;
+    animation: spinner 1000ms infinite linear;
+    z-index: 10000;
+}
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/*---------------------------------------
+     Navigation section              
+-----------------------------------------*/
+.my-navbar {
+    border: none;
+    margin-bottom: 0;
+    background-color: #313238;
+    padding: 6px 0;
+}
+.my-navbar .navbar-brand {
+    color: #dddddd;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
+}
+.my-navbar .nav li a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #dddddd;
+    line-height: 40px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    padding-right: 22px;
+    padding-left: 18px;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+}
+.my-navbar .nav li a:hover {
+    background: transparent;
+    color: #ed1c3a;
+}
+.my-navbar .navbar-nav > li > a:hover,
+.my-navbar .navbar-nav > li > a:focus {
+  background-color: transparent;
+}
+.my-navbar .nav li.active > a {
+    background-color: transparent;
+    color: #ed1c3a;
+}
+.my-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+.my-navbar .navbar-toggle {
+    background-color: transparent;
+}
+.my-navbar .navbar-toggle .icon-bar {
+    background: #ed1c3a;
+    border-color: transparent;
+}
+@media(min-width:768px) {
+  .my-navbar {
+    border-bottom: 0;
+    background: 0 0; 
+  }
+  .my-navbar.top-nav-collapse {
+      background: #000;
+      padding: 6px 0;
+  }
+
+}
+
+
+/*---------------------------------------
+    Home section              
+-----------------------------------------*/
+#home {
+  background: url('../img/home-bg.jpg') 60% 50% repeat-y fixed;
+  background-size: cover;
+  background-position: top right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+   align-items: center;
+   color: #ffffff;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+#home h3 {
+  color: #f0f0f0;
+}
+#home .overlay {
+  background: #000 none repeat scroll 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+.home-title h1 {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+
+
+
+.home-title .type{
+  position: relative;
+}
+
+.home-title p{
+  display: inline-block;
+  font-weight: 700;
+  padding-right: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+
+.home-title span{
+  font-weight: 700;
+  font-size: 25px;
+}
+.typed-cursor{
+  position: absolute;
+  bottom: 4px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.ABOUT CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.about-text {
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 50px;
+}
+.about-text p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #000000;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+.social-sites{
+  margin-bottom: 20px;
+}
+.social-sites i {
+    color: #000000;
+    font-size: 25px;
+    padding: 10px; 
+}
+.buy-btn{
+    background: #ed1c3a none repeat scroll 0 0;
+    color: #fff;
+    line-height: 20px;
+    padding: 12px 26px;
+    border:none;
+}
+.about-button .buy-btn:hover{
+  background-color: #ed1c3a;
+  border: none;
+  color: #000000;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 07.SERVIE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+#service{
+  background-color: #f6f6f6;
+}
+.services{
+  margin-top: 50px;
+}
+.single-service {
+  padding: 0 5px;
+}
+.single-service i{
+}
+.single-service i{
+  font-size: 50px;
+  color: #ed1c3a;
+}
+.single-service h3{
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.single-service p{
+  font-size: 16px; 
+  line-height: 30px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 08.PORTFOLIO CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.works-container{
+  margin-top: 50px;
+}
+.single-portfolio {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.single-portfolio figure {
+    margin: 0;
+}
+.single-portfolio figure img {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-portfolio figure figcaption:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-portfolio figure figcaption h4 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-portfolio figure figcaption h5 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-portfolio:hover figure figcaption:before {
+    opacity: 5;
+}
+.single-portfolio:hover figure figcaption h5 {
+    margin-bottom: 100px;
+    opacity: 5;
+}
+.single-portfolio:hover figure figcaption h4 {
+    margin-bottom: 130px;
+    opacity: 5;
+}
+.single-portfolio:hover figure img {
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    -o-transform: scale(1.1) ;
+    transform: scale(1.1) ;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 9.CLIENTS CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+#testimonial{
+  background-color: #f6f6f6;
+}
+.testimonial{
+  margin-top: 50px;
+}
+.client-quout {
+    margin: 20px  auto 20px;
+    max-width: 700px;
+}
+.quote i{
+  font-size: 30px;
+  color: #ed1c3a;
+}
+.client-quout > p {
+    text-align: center;
+    color: #ed1c3a;
+    line-height: 30px;
+}
+.client-quout > img {
+    display: block;
+    margin: 20px auto 20px;
+    border-radius: 100px;
+}
+.client-quout span {
+    color: #000000;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 20%;
+}
+.owl-theme .owl-nav.disabled + .owl-dots{
+  margin-top: 0px;
+}
+.owl-theme .owl-dots .owl-dot span{
+  margin: 0px 7px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 10.CONTACT CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.component-all{
+  margin-top: 50px;
+}
+.form-group{
+  margin-bottom: 0px;
+}
+.single-component {
+    display: block;
+    text-align: center;
+    color: #000000;
+}
+.single-component i{
+    color: #f04439;
+    border: 1px solid #f04439;
+    border-radius: 100px;
+    display: block;
+    font-size: 30px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 60px;
+}
+.contact-form{
+  margin-top: 50px;
+}
+.contact-form input, .contact-form textarea {
+  margin-bottom: 30px;
+}
+.contact-form .form-group .form-control {
+  border: 1px solid #c4c4c4;
+  border-radius: 0;
+  color: #858586;
+  font-size: 16px;
+  height: 50px;
+  float: left;
+  width: 100%;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    box-shadow: none;
+    outline: 0 none;
+}
+.contact-form .form-group textarea {
+    min-height: 200px;
+}
+.form-control::-moz-placeholder {
+    color: #868686;
+    font-size: 15px;
+}
+.contact-form .buy-btn {
+    background: #ed1c3a none repeat scroll 0 0;
+    border: none;
+    color: #fff;
+    line-height: 20px;
+    padding: 12px 26px;
+  }
+.contact-form .buy-btn:hover{
+  background-color: #ed1c3a;
+  border: none;
+  color: #000000;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 11.FOOTER CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+footer{
+  background-color: #f6f6f6;
+  min-height: 100px;
+  margin: auto;
+}
+footer p {
+    color: #000000;
+    font-size: 16px;
+    padding: 9px 0 20px;
+    margin:auto;
+    line-height: 100px;
+}
