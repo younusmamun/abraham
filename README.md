@@ -1,2 +1,2 @@
 # abraham
-This is a personal portfolio template. This is designed for web developer and designer.
+This is a personal portfolio template designed for web developer and designer.
